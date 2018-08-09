@@ -13,7 +13,7 @@ var index = require('./routes/index');
 var second = require('./routes/second');
 var third = require('./routes/third');
 
-app.use(views(path.join(__dirname, '/views/pages'), { extension: 'jade' }));
+app.use(views(path.join(__dirname, '/views/pages'), { extension: 'pug' }));
 app.use(logger());
 app.use(koaBody());
 app.use(serve(path.join(__dirname, '/public')));
